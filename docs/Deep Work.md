@@ -20,13 +20,11 @@ Apontar blocos de trabalho e resultado num caderno
 
 Cada projeto deve ter um tempo máximo associado
 
-## Locais
-
-Locais de trabalho
+## Places to work
 
 - Secretária de casa ou do trabalho
-
-Rotina de encerramento do trabalhos???
+- Define a rotine to close work
+  - Check slack messages and send farewell is a good straight forward routine
 
 ## Estrutura
 
@@ -82,7 +80,7 @@ Blocos de trabalho de +- 1 hora seguido de intervalo de 5 minutos em que me leva
 - async before sync
   - But if you need to do sync a decision make sure to keep it to the point and document
 
-## Como rever PR's
+## How to review PR's
 
 1. Ler PR Readme
 2. Ler código
