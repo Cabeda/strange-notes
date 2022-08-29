@@ -5,7 +5,7 @@
   - Python
   - C# (but já não trabalho há uns anos)
   - R (usado para alguns projetos)
-  - [Scala](../Knowledge/scala/Overview.md)
+  - [Scala](./Programming%20languages/Scala.md)
 - Collegue
   - C
   - Assembly
