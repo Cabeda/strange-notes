@@ -93,6 +93,4 @@ Blocos de trabalho de +- 1 hora seguido de intervalo de 5 minutos em que me leva
 
 [Deep focus](https://doist.com/blog/complete-guide-to-deep-work/)
 
-[Divisão de tempo](./Divisão%20de%20tempo.md)
-
 [Tips on how to be a great engineer](https://www.thezbook.com/the-biggest-mistake-i-see-engineers-make-2/)
