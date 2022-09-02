@@ -56,6 +56,27 @@ Capital: Bahrain
 
 ## Bangladesh
 
-Capital:
+Capital: Dhaka
 
-🚧 Work in progress
+![flag](images/2022-09-01-09-38-26.png)
+
+- Tem a maior praia do mundo (75 KM)
+- Parte da praia é um cemitério de barcos
+- Tem o delta do Ghanges
+
+## Japan
+
+Capital: Toyo
+
+Old Capital: Quioto
+
+- Known Regions
+  - Okkaido
+    - Ilha a norte
+    - Add the Ainu before the common "Japanese" appeared
+  - Okinawa
+    - Ilhas tropicais a sul
+    - Em tempos era o reino de Ryukyu (tributary state da China)
+    - Mais tarde (1609) passou a ser um estado fantoche do Japão
+    - Em 1879 passou a ser parte do Japão
+    - A lingua original é o Uchinaguchi
