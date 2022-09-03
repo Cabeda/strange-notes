@@ -5,9 +5,16 @@
 The CAP Theorem is fundamentally about replication, specifically network failures during replication.
 
 - CAP theorem
+
   - Consistency: on a read receive the most recent item
   - Availability: receive non-failing response
   - Partition tolerance: system operation despite network traffic disruption between nodes
+
+- PACELC theorem
+  - Extension of CAP
+  - It states that in case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C). (source [wiki](https://en.wikipedia.org/wiki/PACELC_theorem))
+
+![ELC Spectrum](images/2022-09-02-23-03-53.png)
 
 ## ACID
 
@@ -24,4 +31,12 @@ It states that once your system accepts and completes a write operation for a pi
 
 ## Serializability
 
- Decides how to treat concurrent transactions on the same underlying pieces of data.
+Decides how to treat concurrent transactions on the same underlying pieces of data.
+
+## Eventual Consistency
+
+> At a very high level, the notion of ”eventual consistency” refers to a distributed systems model where, to quote Wikipedia, “if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value.”
+
+# Links
+
+https://www.alexdebrie.com/posts/dynamodb-eventual-consistency/
