@@ -1,11 +1,8 @@
 
-
 # Postgres
 
 * Row-based database
 * Open source
-
-
 
 ## Data Warehouse
 
@@ -21,24 +18,22 @@
 
 ### Tips
 
-- don't use the [same server](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#configuring-postgres-as-a-data-warehouse) as your production system 
-- upgrade to pg 12+ (or avoid [common table expressions](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#avoid-common-table-expressions) in your queries)
-- go [easy on indexes](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#use-indexes-sparingly) – less is more
-- consider [partitioning](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#partitioning) long tables
-- ensure you're not [I/O-bound](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#minimize-disk-and-io)
-- [vacuum analyze](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/vacuum-after-bulk-inserts) after bulk insertion
-- explore [parallel queries](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#look-at-parallel-queries)
-- increase [statistics sampling](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#increase-statistics-sampling)
-- use [fewer columns](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#use-fewer-columns) on frequently-queried tables
-- 
+* don't use the [same server](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#configuring-postgres-as-a-data-warehouse) as your production system
+* upgrade to pg 12+ (or avoid [common table expressions](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#avoid-common-table-expressions) in your queries)
+* go [easy on indexes](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#use-indexes-sparingly) – less is more
+* consider [partitioning](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#partitioning) long tables
+* ensure you're not [I/O-bound](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#minimize-disk-and-io)
+* [vacuum analyze](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/vacuum-after-bulk-inserts) after bulk insertion
+* explore [parallel queries](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#look-at-parallel-queries)
+* increase [statistics sampling](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#increase-statistics-sampling)
+* use [fewer columns](https://www.narrator.ai/blog/using-postgresql-as-a-data-warehouse/#use-fewer-columns) on frequently-queried tables
+*
 
 **Reasons not to use indexes**
 
 1. For many analytics queries it's faster for Postgres to do a table scan than an index scan
-2. Indexes increase the size of the table. The smaller the table, the more will fit in memory. 
+2. Indexes increase the size of the table. The smaller the table, the more will fit in memory.
 3. Indexes add additional cost on every insert / update
-
-
 
 ### Types of Index
 
@@ -62,22 +57,16 @@ CREATE INDEX access_log_client_ip_ix ON access_log (client_ip)
     WHERE NOT (client_ip > inet '192.168.100.0' AND client_ip < inet '192.168.100.255');
 ```
 
- 
-
 ### Partitions
 
 Divide uma tabela em várias o que pode reduzir o tempo de respota se uma tiver que aceder apenas a uma query. No entanto tem um trabalho extra de manutenção (as tabelas não são criadas automaticamente).
 
+### Replication
 
+Postgres has 2 modes:
 
-### Replicação
-
-Postgres tem dois modos:
-
-* Física
-* Lógica
-
-É recomendado que se usa a lógica que é mais resiliente
+* Physical
+* Logica (more robust)
 
 ### MVCC
 
@@ -121,7 +110,7 @@ EXPLAIN (ANALYZE, BUFFERS) /* SQL statement */;
 * [depesz](https://explain.depesz.com/)
 * [Dalibo](https://explain.dalibo.com/)
 
-## Import data 
+## Import data
 
 * COPY is faster than INSERT
 * Increase checkpoints is better
@@ -131,8 +120,6 @@ EXPLAIN (ANALYZE, BUFFERS) /* SQL statement */;
 * Improving column order and space consumption
   * Fixed sized columns first
 
-
-
 ## Notification/Listen
 
 * Can one subscribe to changes? (alternative to streaming system)
@@ -141,3 +128,9 @@ EXPLAIN (ANALYZE, BUFFERS) /* SQL statement */;
 
 * Perf improvements
 * Adds multirange type
+
+## Postgres 16
+
+* Allows for logical replication from secondary instances
+* Many performance improvements due to parallelization
+* Adds the pg_stats_io for monitoring IO

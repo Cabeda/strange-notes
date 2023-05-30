@@ -64,6 +64,19 @@ Capital: Dhaka
 - Parte da praia é um cemitério de barcos
 - Tem o delta do Ghanges
 
+## Barbados
+
+Capital: Bridgetown
+
+![Flag](images/2022-09-19-16-47-21.png)
+
+- ilha de 94km de costa, fora da zona das caraibas.
+- Tem a destilaria mais antiga de rum.
+- Rihanna é daqui.
+- Falam inglês,
+- Colônia da Inglaterra.
+- Tax haven
+
 ## Japan
 
 Capital: Toyo
