@@ -14,3 +14,9 @@ Uses DQDL. Howevever it's important to consider the following limitations:
 * DQDL thresholds must be hardcoded. They cannot, for example, be compared against a dynamic moving average of that number over the last week.
 * The raw result of a measurement e.g DistinctValuesCount is unavailable to you. This may be necessary for you to quantify the scale and severity of a data quality problem. Distinct values declining by 5% may require a different resolution workflow, than distinct values declining by 100%
 * DQDL CustomSQL rules must emit 1 numeric result alone, which will be compared against the threshold expression. In cases where you want a `GROUP BY`-style measurement, you will need to pre-define the groups and define separate CustomSQL rules for each.
+
+## Iceberg
+
+[Source](https://aws.amazon.com/blogs/big-data/perform-upserts-in-a-data-lake-using-amazon-athena-and-apache-iceberg/)
+
+[How to enable near real-time CDC with CDC](https://aws.amazon.com/blogs/big-data/perform-upserts-in-a-data-lake-using-amazon-athena-and-apache-iceberg/)

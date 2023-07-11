@@ -43,3 +43,16 @@ Use line_profiler package
 ### Import system
 
 https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
+
+## Linters
+
+- Pylint
+- Flake8,
+- Pyflakes
+- pycodestyle
+- Ruff: Rust implementation ([source](https://lwn.net/Articles/930487/))
+  - Supports python 3.7 and above
+
+## Autoformatters
+
+- Black

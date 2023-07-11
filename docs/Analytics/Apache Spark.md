@@ -2,6 +2,34 @@
 title: "Apache Spark"
 ---
 
+It is divided in the following packages
+
+- Spark Core
+- MLlib
+- SparkSQL
+- Spark Structured Streaming
+- GraphX: provides for functions to manipulate graphs
+
+## Architecture
+
+It's divided by:
+
+1. Spark Application
+2. Spark Driver
+3. SparkSession
+4. ClusterManager
+5. Spark Executor
+
+### Cluster manager
+
+Supports the following types:
+
+- local
+- standalone
+- yarn cluster|server
+- mesos
+- kubernetes
+
 ## Libraries
 
 - pyspark.sql.functions: get spark functions
@@ -144,3 +172,15 @@ Execution modes
 - job
   - stages: set of tasks done in a single executor
     - tasks: unit of computation
+
+## Uber analyser
+
+- Uber provides spark as a service. To try to improve optimizations for users that are not aware of spark it created an additional layer source (https://www.uber.com/en-US/blog/spark-analysers-catching-anti-patterns-in-spark-apps/).
+
+## Spark EMR on EKS
+
+[Source](https://aws.amazon.com/blogs/big-data/improve-reliability-and-reduce-costs-of-your-apache-spark-workloads-with-vertical-autoscaling-on-amazon-emr-on-eks/)
+
+- Docker image that allows to run EMR runtime
+- Support vertical autoscaling, using Kubernetes Vertical Pod Autoscaler (VPA) to automatically tune the memory and CPU resources of EMR Spark
+  - Vertical autoscaling complements existing Spark autoscaling solutions such as Dynamic Resource Allocation (DRA) and Kubernetes autoscaling solutions such as Karpenter.

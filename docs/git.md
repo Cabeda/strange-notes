@@ -66,3 +66,9 @@ More Examples:
 - `refactor`: (refactoring production code, eg. renaming a variable)
 - `test`: (adding missing tests, refactoring tests; no production code change)
 - `chore`: (updating grunt tasks etc; no production code change)
+
+## Stacked pull requests
+
+Way to stack pull requests on top of each other. In this way you are sure that your changes are applied with the latest changes that have yet to be deploy to main.
+
+Github impleentation: https://github.com/ejoffe/spr

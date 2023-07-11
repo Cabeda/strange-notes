@@ -24,3 +24,7 @@ Also check [S3](./AWS/S3.md). If we set tags on write we can tell S3 which objec
 ## Releases
 
 [Source](https://iceberg.apache.org/releases)
+
+## WAP (Write-Audit-Publish)
+
+Uses the data branching to enable safe data publishing. The logic is very similar to the one provided as transactions by databases such as Postgres.

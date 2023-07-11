@@ -14,3 +14,10 @@ How to write a winning session proposal ([source](https://github.blog/2023-05-18
    1. Read through recaps of the previous year’s events so you can see which sessions were popular and draw inspiration from them
    2. Contact former speakers to understand how they approached the process and ask for feedback on your submission
    3. Make sure you are aware of the latest issues and talking points in the industry. Subscribe to well-known blogs and newsletters, look up trending conversations on Twitter and LinkedIn, and check out any popular podcasts. The more well-versed you are in the sector, the more credible you will be as a potential speaker.
+10. Avoid showing code
+11. Provide examples
+
+## During presentation
+
+1. Keep moving
+2. Don't have your hands doing nothing. Use them to express yourself

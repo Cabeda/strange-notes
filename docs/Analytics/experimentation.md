@@ -12,6 +12,21 @@ But this is just a stepping stone in my opinion. We need to make decisions and t
 
 Note: Need to understand the differences between A/B testing and experimentation.
 
+## Tips
+
+[Source](https://medium.com/seek-blog/10-lessons-from-building-an-experimentation-platform-ded851715683)
+
+1. Ensure data is fit for purpose (avoid using operational tables for analytical)
+2. Keep complex data transformations outside the experimentation platform
+3. Start with simple statistical methodology
+4. Recognise that methods for understanding anomalies in the data are more important than advanced statistical techniques
+5. Consider the impacts of outliers / extreme observations
+6. Focus on early stopping techniques before variance reduction
+7. Consider scalability right from the start
+8. Cache EVERYTHING
+9. Use task parallelisation wherever possible
+10. Consider both scheduled and ad hoc analysis use cases — but don’t build one system for both
+
 ## References
 
 - [door dash](https://doordash.engineering/2020/05/26/why-we-built-a-metrics-platform/)
